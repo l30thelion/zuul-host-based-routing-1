@@ -1,0 +1,10 @@
+domains:
+  consumer-domain: local-dev-consumer-web.com
+  consumer-admin-domain: admin.local-dev-consumer-web.com
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    users:
+      path: /**
+      stripPrefix: false
